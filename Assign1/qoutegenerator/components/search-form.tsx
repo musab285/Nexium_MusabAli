@@ -8,6 +8,8 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
+import * as React from "react"
+import { ComboboxDemo } from "./combobox"
 
 
 export function InputForm({
@@ -49,11 +51,21 @@ export function InputForm({
                 placeholder="What's on your mind?"
                 onChange={(e) => setTopic(e.target.value)}
                 required
-              >
+              />
+              <ComboboxDemo
+                authors={[
+                  "Albert Einstein",
+                  "Isaac Newton",
+                  "Marie Curie",
+                  "Galileo Galilei",
+                  "Nikola Tesla",
+                ]}
                 
-              </Input>
+              />
+
+
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full mt-auto">
               Search
             </Button>
           </div>

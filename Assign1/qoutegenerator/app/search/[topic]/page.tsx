@@ -7,10 +7,6 @@ interface Quote {
     topic: string;
 }
 
-export async function generateStaticParams() {
-    const topics = Array.from(new Set(data.map((quote: Quote) => quote.topic.toLowerCase())));
-    return topics.map((topic) => ({ topic }));
-}
 
 export default async function TopicPage({ params }: { params: { topic: string } }) {
     const topic = params.topic.toLowerCase();
