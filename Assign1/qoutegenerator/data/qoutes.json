@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "text": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "topic": "motivation"
+  },
+  {
+    "id": 2,
+    "text": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "topic": "inspiration"
+  },
+  {
+    "id": 3,
+    "text": "Life is what happens to you while you're busy making other plans.",
+    "author": "John Lennon",
+    "topic": "life"
+  }
+]
