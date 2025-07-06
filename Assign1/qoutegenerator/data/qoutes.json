@@ -6,45 +6,51 @@
     "topic": "motivation"
   },
   {
-    "id": 4,
-    "text": "Success is not the key to happiness. Happiness is the key to success.",
-    "author": "Albert Schweitzer",
-    "topic": "motivation"
-  },
-  {
-    "id": 5,
-    "text": "The only way to do great work is to love what you do.",
-    "author": "Steve Jobs",
-    "topic": "motivation"
-  },
-  {
-    "id": 4,
-    "text": "Success is not the key to happiness. Happiness is the key to success.",
-    "author": "Albert Schweitzer",
-    "topic": "motivation"
-  },
-  {
-    "id": 1,
-    "text": "The only way to do great work is to love what you do.",
-    "author": "Steve Jobs",
-    "topic": "motivation"
-  },
-  {
-    "id": 4,
-    "text": "Success is not the key to happiness. Happiness is the key to success.",
-    "author": "Albert Schweitzer",
-    "topic": "motivation"
-  },
-  {
     "id": 2,
-    "text": "In the middle of difficulty lies opportunity.",
-    "author": "Albert Einstein",
-    "topic": "inspiration"
+    "text": "Success is not the key to happiness. Happiness is the key to success.",
+    "author": "Albert Schweitzer",
+    "topic": "motivation"
   },
   {
     "id": 3,
-    "text": "Life is what happens to you while you're busy making other plans.",
-    "author": "John Lennon",
-    "topic": "life"
+    "text": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "topic": "motivation"
+  },
+  {
+    "id": 4,
+    "text": "Success usually comes to those who are too busy to be looking for it.",
+    "author": "Henry David Thoreau",
+    "topic": "success"
+  },
+  {
+    "id": 5,
+    "text": "Don't be afraid to give up the good to go for the great.",
+    "author": "John D. Rockefeller",
+    "topic": "success"
+  },
+  {
+    "id": 6,
+    "text": "The road to success and the road to failure are almost exactly the same.",
+    "author": "Colin R. Davis",
+    "topic": "success"
+  },
+  {
+    "id": 7,
+    "text": "Doubt kills more dreams than failure ever will.",
+    "author": "Suzy Kassem",
+    "topic": "self doubt"
+  },
+  {
+    "id": 8,
+    "text": "You are braver than you believe, stronger than you seem, and smarter than you think.",
+    "author": "A.A. Milne",
+    "topic": "self doubt"
+  },
+  {
+    "id": 9,
+    "text": "Our doubts are traitors, and make us lose the good we oft might win, by fearing to attempt.",
+    "author": "William Shakespeare",
+    "topic": "self doubt"
   }
 ]

@@ -47,7 +47,8 @@ export function InputForm({
               <Input
                 id="topic"
                 type="text"
-                placeholder="What's on your mind?"
+                className="bg-white hover:shadow-md "
+                placeholder="Select from motivation, success, self doubt..."
                 onChange={(e) => setTopic(e.target.value)}
                 required
               />

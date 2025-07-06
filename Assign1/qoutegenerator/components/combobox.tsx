@@ -44,11 +44,11 @@ export function ComboboxDemo({value, onChange, topic}: ComboboxDemoProps) {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-full justify-between "
+          className="w-full justify-between hover:shadow-md hover:bg-white"
         >
           {value
             ? authors.find((author) => author === value)
-            : "Select author(optional)..."}
+            : "Select author..."}
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>
