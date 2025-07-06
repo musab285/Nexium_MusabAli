@@ -30,7 +30,7 @@ export default function TopicPage() {
     );
 
     if (quotes.length === 0) {
-        return <div className=" bg-hero bg-gray-700 text-center">No quotes found for this topic.</div>;
+        return <div className="bg-gradient-to-br from-gray-100 to-gray-600 min-h-screen items-center text-center">No quotes found for this topic.</div>;
     }
 
 
