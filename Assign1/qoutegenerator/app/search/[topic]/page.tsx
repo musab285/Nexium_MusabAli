@@ -36,7 +36,7 @@ export default function TopicPage() {
 
     return (
         <div className="bg-hero bg-gray-700 p-6 min-h-screen font-mono justify-center w-full mx-auto bg-gray-200">
-            <div className="text-4xl font-semibold text-gray-700 text-center bg-linear-to-r from-transparent via-green-100 to-transparent rounded-xl mx-10 p-2 capitalize">Quotes on {topic.charAt(0).toUpperCase() + topic.slice(1)} by {(author? author:"")}...</div>
+            <div className="text-4xl font-semibold text-gray-700 text-center bg-linear-to-r from-transparent via-green-100 to-transparent rounded-xl mx-10 p-2 capitalize">Quotes on {topic.charAt(0).toUpperCase() + topic.slice(1)}{author && " by "}{(author? author:"")}...</div>
             <div className="flex flex-col justify-center h-[calc(100vh-20vh))]">
                 <ScrollArea className="rounded-xl max-h-[calc(100vh-24vh)] border-collapse w-auto mx-2 px-6 py-2">
                     {quotes.map((quote) => (
