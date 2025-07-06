@@ -5,16 +5,11 @@ import { useSearchParams } from "next/navigation";
 import { useParams } from "next/navigation";
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Button } from "@/components/ui/button"
-import { useState } from "react";
 
 interface Quote {
     id: number;

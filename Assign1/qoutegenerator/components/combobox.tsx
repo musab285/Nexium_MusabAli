@@ -48,7 +48,7 @@ export function ComboboxDemo({value, onChange, topic}: ComboboxDemoProps) {
         >
           {value
             ? authors.find((author) => author === value)
-            : "Select author..."}
+            : "Select author (optional)"}
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>
