@@ -4,7 +4,6 @@ import { GalleryVerticalEnd} from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
@@ -45,14 +44,6 @@ export function InputForm({
           <div className="flex flex-col gap-8 my-4">
             <div className="grid gap-3">
               <Label className="text-lg ">Topic</Label>
-              {/* <Input
-                id="topic"
-                type="text"
-                className=" bg-white hover:shadow-md transition duration-300 ease-in-out hover:-translate-y-1"
-                placeholder="Motivation, Success, Belief..."
-                onChange={(e) => setTopic(e.target.value.trim())}
-                required
-              /> */}
               <ComboboxTopic
                 value={topic}
                 onChange={setTopic}/>
