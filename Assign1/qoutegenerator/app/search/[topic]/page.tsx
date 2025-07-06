@@ -21,7 +21,8 @@ interface Quote {
 
 export default function TopicPage() {
     const searchParams = useSearchParams();
-    const topic = useParams().topic?.toLowerCase() || "";
+    const rawTopic = useParams().topic;
+    const topic = (Array.isArray(rawTopic) ? rawTopic[0] : rawTopic)?.toLowerCase() || "";
     const author = searchParams.get("author")?.toLowerCase() || "";
     const quotes: Quote[] = data.filter((quote: Quote) => 
         quote.topic.toLowerCase() === topic && 
