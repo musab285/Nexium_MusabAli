@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation"
 import { useState } from "react"
 import * as React from "react"
 import { ComboboxDemo } from "./combobox"
+import { Separator } from "@/components/ui/separator"
 
 
 export function InputForm({
@@ -18,25 +19,23 @@ export function InputForm({
 }: React.ComponentProps<"div">) {
   const router = useRouter();
   const [topic, setTopic] = useState("");
+  const [author, setAuthor] = useState("");
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    router.push(`/search/${topic.toLowerCase()}`);
+    router.push(`/search/${topic.toLowerCase()}?author=${author? author.toLowerCase() : ""}`);
   };
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <form onSubmit={handleSubmit} >
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
           <div className="flex flex-col items-center gap-2">
-            {/* <a
-              href="#"
-              className="flex flex-col items-center gap-2 font-medium"
-            > */}
+            
               <div className="flex size-8 items-center justify-center rounded-md">
                 <GalleryVerticalEnd className="size-6" />
               </div>
               <span className="sr-only"></span>
-            {/* </a> */}
+           
             <h1 className="text-4xl font-extrabold">Qoute Generator</h1>
             <div className="mt-2 text-center text-sm">
               Your Daily Dose of Motivation!
@@ -53,28 +52,16 @@ export function InputForm({
                 required
               />
               <ComboboxDemo
-                authors={[
-                  "Albert Einstein",
-                  "Isaac Newton",
-                  "Marie Curie",
-                  "Galileo Galilei",
-                  "Nikola Tesla",
-                ]}
-                
+                value={author}
+                onChange={setAuthor}
+                topic={topic}
               />
-
-
             </div>
             <Button type="submit" className="w-full mt-auto">
               Search
             </Button>
           </div>
-          <div className="m-2 after:border-border relative text-center text-sm after:absolute after:inset-0 after:top-1/2 after:z-0 after:flex after:items-center after:border-t">
-            {/* <span className="bg-background text-muted-foreground relative z-10 px-2">
-              
-            </span> */}
-          </div>
-          
+          <Separator className="m-2" />
         </div>
       </form>
       <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">

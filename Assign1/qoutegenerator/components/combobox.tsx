@@ -17,12 +17,26 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import { useState } from "react"
+import data from "@/data/qoutes.json";
 
+interface ComboboxDemoProps {
+  value?: string
+  onChange?: (value: string) => void
+  topic?: string
+}
 
+interface Quote{
+  id: number;
+  text : string;
+  author: string;
+  topic: string;
+}
 
-export function ComboboxDemo({ authors }: { authors: string[] }) {
-  const [open, setOpen] = React.useState(false)
-  const [value, setValue] = React.useState("")
+export function ComboboxDemo({value, onChange, topic}: ComboboxDemoProps) {
+  const [open, setOpen] = useState(false)
+  const quotes = data.filter((quote: Quote) => quote.topic.toLowerCase() === topic);
+  const authors = quotes.map((quote: Quote) => quote.author)
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
@@ -49,7 +63,7 @@ export function ComboboxDemo({ authors }: { authors: string[] }) {
             key={author}
             value={author}
             onSelect={(currentValue) => {
-              setValue(currentValue === value ? "" : currentValue)
+              onChange?.(currentValue)
               setOpen(false)
             }}
             >
