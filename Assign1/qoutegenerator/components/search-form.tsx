@@ -48,7 +48,7 @@ export function InputForm({
                 id="topic"
                 type="text"
                 className="bg-white hover:shadow-md "
-                placeholder="Select from motivation, success, self doubt..."
+                placeholder="Select from motivation, success, belief..."
                 onChange={(e) => setTopic(e.target.value)}
                 required
               />

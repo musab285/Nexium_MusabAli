@@ -36,7 +36,7 @@ export default function TopicPage() {
 
     return (
         <div className="bg-gradient-to-br from-gray-100 to-gray-600 p-6 min-h-screen font-mono justify-center w-full mx-auto bg-gray-200">
-            <div className="text-4xl font-semibold mb-4 p-2">Quotes on {topic}...</div>
+            <div className="text-4xl font-semibold mb-4 p-2">Quotes on {topic.charAt(0).toUpperCase() + topic.slice(1)}...</div>
             <ScrollArea className="rounded-b-xl h-[calc(100vh-24vh)] border-collapse w-auto mx-2 px-6 py-2 ">
             {quotes.map((quote) => (
                 <Card className="my-4 bg-gray-100 shadow-md mx-2 hover:-translate-y-1 hover:cursor-pointer hover:shadow-xl delay-150 duration-500" key={quote.id}>
