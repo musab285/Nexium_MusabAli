@@ -1,6 +1,6 @@
 "use client"
 
-import { GalleryVerticalEnd, Router } from "lucide-react"
+import { GalleryVerticalEnd} from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
