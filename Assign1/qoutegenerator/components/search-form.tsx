@@ -11,9 +11,6 @@ import * as React from "react"
 import { ComboboxDemo } from "./combobox"
 import { ComboboxTopic } from "./comboboxtopic"
 import { Separator } from "@/components/ui/separator"
-import { GalleryVerticalEnd } from "lucide-react"
-import { Image } from "lucide-react"
-
 
 
 export function InputForm({
