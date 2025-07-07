@@ -48,15 +48,15 @@ export function ComboboxDemo({value, onChange, topic}: ComboboxDemoProps) {
         >
           {value
             ? authors.find((author) => author === value)
-            : "Select author (optional)"}
+            : "Select source (optional)"}
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>
     <PopoverContent align="start" className="p-0 ">
       <Command>
-        <CommandInput placeholder="Search author..." className="h-9" />
+        <CommandInput placeholder="Search Source..." className="h-9" />
         <CommandList>
-        <CommandEmpty>No author found.</CommandEmpty>
+        <CommandEmpty>No source found.</CommandEmpty>
         <CommandGroup>
           {authors.map((author) => (
             <CommandItem

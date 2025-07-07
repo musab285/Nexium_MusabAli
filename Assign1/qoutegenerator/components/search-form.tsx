@@ -30,7 +30,7 @@ export function InputForm({
       <form onSubmit={handleSubmit} >
         <div className="flex flex-col gap-4">
           <div className="flex flex-col items-center gap-2">
-            <h1 className="text-2xl text-center md:text-5xl text-shadow-lg/20 font-bold">Qoute Generator</h1>
+            <h1 className="text-2xl text-center md:text-5xl text-shadow-lg/20 font-bold">Quote Generator</h1>
             <div className="mt-2 text-center text-gray-700/80 text-md/20 text-shadow-md">
               Your Daily Dose of Motivation!
             </div>
@@ -41,7 +41,7 @@ export function InputForm({
               <ComboboxTopic
                 value={topic}
                 onChange={setTopic}/>
-              <Label className="text-md/20 text-shadow-md">Author:</Label>
+              <Label className="text-md/20 text-shadow-md">Source:</Label>
               <ComboboxDemo
                 value={author}
                 onChange={setAuthor}

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Qoute Generator",
+  title: "Quote Generator",
   description: "Your daily dose of motivation!",
 };
 
