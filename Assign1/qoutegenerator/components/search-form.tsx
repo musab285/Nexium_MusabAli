@@ -1,6 +1,6 @@
 "use client"
 
-import { GalleryVerticalEnd} from "lucide-react"
+// import { GalleryVerticalEnd} from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -11,6 +11,9 @@ import * as React from "react"
 import { ComboboxDemo } from "./combobox"
 import { ComboboxTopic } from "./comboboxtopic"
 import { Separator } from "@/components/ui/separator"
+import { GalleryVerticalEnd } from "lucide-react"
+import { Image } from "lucide-react"
+
 
 
 export function InputForm({
@@ -30,23 +33,18 @@ export function InputForm({
       <form onSubmit={handleSubmit} >
         <div className="flex flex-col gap-4">
           <div className="flex flex-col items-center gap-2">
-            
-              <div className="flex size-8 items-center justify-center rounded-md">
-                <GalleryVerticalEnd className="size-6" />
-              </div>
-              <span className="sr-only"></span>
-           
-            <h1 className="text-2xl text-center md:text-4xl font-extrabold">Qoute Generator</h1>
-            <div className="mt-2 text-center text-sm">
+            <h1 className="text-2xl text-center md:text-5xl text-shadow-lg/20 font-bold">Qoute Generator</h1>
+            <div className="mt-2 text-center text-gray-700/80 text-md/20 text-shadow-md">
               Your Daily Dose of Motivation!
             </div>
           </div>
-          <div className="flex flex-col gap-8 my-4">
+          <div className="flex flex-col gap-8 my-2">
             <div className="grid gap-3">
-              <Label className="text-lg ">Topic</Label>
+              <Label className="text-md/20 text-shadow-md">Topic:</Label>
               <ComboboxTopic
                 value={topic}
                 onChange={setTopic}/>
+              <Label className="text-md/20 text-shadow-md">Author:</Label>
               <ComboboxDemo
                 value={author}
                 onChange={setAuthor}
@@ -56,14 +54,14 @@ export function InputForm({
             <Button type="submit" className="w-full mt-auto transition duration-600 ease-in-out hover:-translate-y-1">
               Search
             </Button>
-            <Separator />
+            <Separator className="mt-2"/>
           </div>
           
         </div>
       </form>
-      <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
+      <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4 text-md/20 text-shadow-md">
         <p>
-           Developed for NEXIUM by Musab Ali
+           Developed for <a href="https://www.nexium.ltd/" className="font-semibold underline">NEXIUM</a> by <a href="https://www.linkedin.com/in/mmak285/" className="font-semibold underline">Musab Ali</a>
         </p>
       </div>
     </div>
