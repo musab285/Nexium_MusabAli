@@ -1,2 +1,2 @@
 # Nexium_MusabAli
-Submissions for Nexium INTERNSHIP 2025
+Submissions for NEXIUM INTERNSHIP 2025
